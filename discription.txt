@@ -1,0 +1,39 @@
+1. npx create-react-app react-movie-web
+    - 프로 젝트 생성
+    - 전에 node -v 으로 node.js 설치 확인.
+    - npx 명령어 확인.
+
+2. 설치가 완료 되면
+    - 터미널에서 해당 프로젝트로 이동 후(cd)
+    - npm run
+    - npm start
+
+3. 뜨는거 확인 후 필요없는 파일 삭제!
+
+4. npm i prop-types
+    - 를 설치(파라미터의 타입을 정의 할 수 있게 해줌.)
+
+5. coin infomation
+    - https://api.coinpaprika.com/v1/tickers
+
+6. movie infomation
+    - https://yts.mx/api/v2/list_movies.json?minimum_rating=9&sort_by=year
+
+7. npm i react-router-dom@5.3.0
+    - 페이지 이동 시 필요한,,,
+
+8. npm i gh-pages
+    - github 업로드 패키지
+    - 소스 올리는 코드.
+    - 안된다면 
+    - npm install --save gh-pages 
+    - npm run deploy
+    - Published 가 뜨면 됨,,,,
+
+echo "# practice-react-movie" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/hjho/practice-react-movie.git
+git push -u origin main
