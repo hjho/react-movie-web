@@ -137,10 +137,7 @@ function Home() {
     });
   }
 
-  useEffect(() => {
-    getMovies();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [genre, sortBy, orderBy, rating, page]);
+  useEffect(getMovies, [genre, sortBy, orderBy, rating, page]);
 
   // console.log("Home Rending");
   return (
@@ -154,8 +151,7 @@ function Home() {
             <Gennres />
             <SortBy />
             <OrderBy />
-            <button onClick={() => pageDown(1)}>[S]
-            </button>
+            <button onClick={() => pageDown(1)}>[S]</button>
             <button onClick={() => pageDown(0)}>◀</button>
             <span> page[{page}/{totalPage}] </span>
             <button onClick={() => pageUp(0)}>▶</button>
@@ -164,7 +160,7 @@ function Home() {
                 <thead>
                   <tr>
                     <th>No.</th>
-                    <th>Image</th>
+                    <th>year</th>
                     <th>Title</th>
                     <th>Rating</th>
                     <th>Runtime</th>
