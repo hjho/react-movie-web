@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 import Movie from "../components/Movie";
 
 function Home() {
@@ -146,6 +147,7 @@ function Home() {
           <h1>Loading...</h1>
         ) : (
           <div>
+            <Link to={"/react-movie-web/"}>새로고침</Link>
             <h1>Movie Infomation</h1>
             <Rating />
             <Gennres />
