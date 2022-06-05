@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {useParams} from "react-router-dom"
+import {Link} from "react-router-dom";
 
 function Detail() {
     const {id} = useParams();
@@ -25,7 +26,7 @@ function Detail() {
     // console.log("Detail Rending:", movie);
     return (
         <div>
-            <a href="/react-movie-web/">뒤로 가기</a>
+            <Link to={"/react-movie-web/"}>뒤로 가기</Link>
             {
                 isLoading ? (
                     <div>
