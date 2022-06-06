@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {Link} from "react-router-dom";
 import Movie from "../components/Movie";
+import World from "../components/World";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -143,11 +144,15 @@ function Home() {
   // console.log("Home Rending");
   return (
       <div>
+        <div>
+          <Link to={"/react-movie-web/"}>새로고침</Link>
+          <h1>Hello HJHO World!</h1>
+          <World />
+        </div>
         {loading ? (
           <h1>Loading...</h1>
         ) : (
           <div>
-            <Link to={"/react-movie-web/"}>새로고침</Link>
             <h1>Movie Infomation</h1>
             <Rating />
             <Gennres />
